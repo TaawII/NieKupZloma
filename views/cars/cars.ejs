@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles/cars/cars.css">
+    </head>
+    <body>
+        <%- navbar %>
+        <div class="actions">
+            <form action="/cars/select" method="GET">
+                <select name="brand">
+                    <option <%=!selectedBrand || selectedBrand === "Marka" ?
+                        "selected" : "" %>>Marka</option>
+                    <% brands.forEach(function(brand) { %>
+                    <option value="<%= brand %>" <%=selectedBrand === brand ?
+                        "selected" : "" %>><%= brand %></option>
+                    <% }); %>
+                </select>
+                <select name="model">
+                    <option <%=!selectedModel || selectedModel === "Model" ?
+                        "selected" : "" %>>Model</option>
+                    <% models.forEach(function(model) { %>
+                    <option value="<%= model %>" <%=selectedModel === model ?
+                        "selected" : "" %>><%= model %></option>
+                    <% }); %>
+                </select>
+                <label>Cena od:</label>
+                <input type="number" name="valueMin"
+                    value="<%= selectedValueMin || '' %>">
+                <label>Cena do:</label>
+                <input type="number" name="valueMax"
+                    value="<%= selectedValueMax || '' %>">
+                <button type="submit">Filtruj</button>
+            </form>
+        </div>
+        <div>
+            <ul id="allCarsList">
+                <% cars.forEach(function(car) { %>
+                <li onclick="goTo(this.id)" id="<%=car.id%>">
+                    <strong>
+                        <span class="carBrand"><%= car.brand %></span>
+                        <span class="carModel"><%= car.model %></span>
+                    </strong>
+                    <span class="car-info"><%= car.year %></span>
+                    <span class="car-info"><%= car.color %></span>
+                    <span class="car-info" carValue=<%= car.price %>><%=
+                        car.price %>zł</span>
+                </li>
+                <% }); %>
+            </ul>
+        </div>
+        <div class="actions">
+            <a href="cars/json">Dane w formacie JSON</a>
+            <a href="cars/xml">Dane w formacie XML</a>
+            <a href="cars/txt">Pobierz plik cars.json</a>
+        </div>
+    </body>
+</html>
+
+<script>
+goTo = (id) => {
+    const baseUrl = window.location.origin
+    const url = `${baseUrl}/cars/${id}`
+    window.location.href = url
+}
+</script>

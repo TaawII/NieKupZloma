@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles/cars/add.css">
+    </head>
+    <body>
+        <%- navbar %>
+        <div class="container">
+            <h1>Dodaj Nowy Samochód</h1>
+            <form action="/cars/add" method="POST"
+                enctype="multipart/form-data">
+                <!-- Ustawienie akcji na ścieżkę do obsługi formularza -->
+                <div>
+                    <label for="brand">Marka:</label>
+                    <input type="text" id="brand" name="brand" required>
+                </div>
+                <div>
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" required>
+                </div>
+                <div>
+                    <label for="year">Rok:</label>
+                    <input type="number" id="year" name="year" min="0" required>
+                </div>
+                <div>
+                    <label for="color">Kolor:</label>
+                    <input type="text" id="color" name="color" required>
+                </div>
+                <div>
+                    <label for="price">Cena:</label>
+                    <input type="number" id="price" name="price"
+                        min="0" required>
+                </div>
+                <div>
+                    <label for="file">Zdjęcie:</label>
+                    <input type="file" name="file"
+                        accept="image/jpeg, image/png, image/gif, image/webp" />
+                </div>
+                <button type="submit">Dodaj Samochód</button>
+            </form>
+        </div>
+    </body>
+</html>

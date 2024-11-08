@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles/cars/show.css">
+    </head>
+    <body>
+        <%- navbar %>
+        <div class="container">
+            <% if(car.image != null && car.image != "") { %>
+            <img src="/images/cars/<%= car.image %>" alt="Zdjecie samochodu" class="responsive-img">
+            <% }else{ %>
+                <img src="/images/cars/auto.png" alt="Alternatywne zdjecie samochodu" class="responsive-img">
+            <% } %>
+            <div class="car-details">
+                <p>Marka: <%= car.brand %></p>
+                <p>Model: <%= car.model %></p>
+                <p>Rok produkcji: <%= car.year %></p>
+                <p>Kolor: <%= car.color %></p>
+                <p class="price">Cena: <%= car.price %>zł</p>
+                <div class="actions">
+                    <a href="editImage/<%= car.id %>">Edytuj zdjecie</a> <a href="edit/<%= car.id %>">Edytuj opis</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

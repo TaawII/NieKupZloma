@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles/cars/add.css">
+    </head>
+    <body>
+        <%- navbar %>
+        <div class="container">
+            <h1>Zmien dane samochodu</h1>
+            <form action="/cars/edit/<%= car.id %>" method="POST">
+                <div>
+                    <label for="brand">Marka:</label>
+                    <input type="text" id="brand" name="brand"
+                        value="<%= car.brand %>" required>
+                </div>
+                <div>
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model"
+                        value="<%= car.model %>" required>
+                </div>
+                <div>
+                    <label for="year">Rok:</label>
+                    <input type="number" id="year" name="year" min="0"
+                        value="<%= car.year %>" required>
+                </div>
+                <div>
+                    <label for="color">Kolor:</label>
+                    <input type="text" id="color" name="color"
+                        value="<%= car.color %>" required>
+                </div>
+                <div>
+                    <label for="price">Cena:</label>
+                    <input type="number" id="price" name="price" min="0"
+                        value="<%= car.price %>" required>
+                </div>
+                <button type="submit">Zapisz</button>
+            </form>
+        </div>
+    </body>
+</html>

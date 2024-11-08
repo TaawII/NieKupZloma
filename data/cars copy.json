@@ -1,0 +1,148 @@
+[
+    {
+      "id": 0,
+      "brand": "Porsche",
+      "model": "911 GT3 RS",
+      "year": 2020,
+      "color": "GT Silver Metallic",
+      "price": 922500,
+      "image": "porsche911gt3rs.webp"
+    },
+    {
+      "id": 1,
+      "brand": "Porsche",
+      "model": "Panamera",
+      "year": 2020,
+      "color": "Volcano Grey Metallic",
+      "price": 499000,
+      "image": "1731032975542-263556828-obraz_2024-11-08_032756081.png"
+    },
+    {
+      "id": 2,
+      "brand": "Toyota",
+      "model": "Supra",
+      "year": 2022,
+      "color": "Absolute Zero White",
+      "price": 52000
+    },
+    {
+      "id": 3,
+      "brand": "Toyota",
+      "model": "Land Cruiser 70",
+      "year": 2021,
+      "color": "Beige",
+      "price": 55000
+    },
+    {
+      "id": 4,
+      "brand": "Toyota",
+      "model": "Corolla GR",
+      "year": 2022,
+      "color": "Super White",
+      "price": 35000
+    },
+    {
+      "id": 5,
+      "brand": "Toyota",
+      "model": "Supra",
+      "year": 2022,
+      "color": "Graphite",
+      "price": 45000
+    },
+    {
+      "id": 6,
+      "brand": "Lamborghini",
+      "model": "Aventador SVJ",
+      "year": 2021,
+      "color": "Arancio Atlas",
+      "price": 517000
+    },
+    {
+      "id": 7,
+      "brand": "Lamborghini",
+      "model": "Huracán EVO",
+      "year": 2022,
+      "color": "Bianco Icarus",
+      "price": 261000
+    },
+    {
+      "id": 8,
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "year": 2022,
+      "color": "Nero Noctis",
+      "price": 230000
+    },
+    {
+      "id": 9,
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "year": 2022,
+      "color": "Verde Scandal",
+      "price": 3300000
+    },
+    {
+      "id": 10,
+      "brand": "Ford",
+      "model": "Mustang Shelby GT500",
+      "year": 2020,
+      "color": "Shadow Black",
+      "price": 70000
+    },
+    {
+      "id": 11,
+      "brand": "Ford",
+      "model": "F-150 Raptor",
+      "year": 2021,
+      "color": "Lead Foot",
+      "price": 64000
+    },
+    {
+      "id": 12,
+      "brand": "Ford",
+      "model": "Ford Mustang",
+      "year": 2020,
+      "color": "Grabber Lime",
+      "price": 40000
+    },
+    {
+      "id": 13,
+      "brand": "Ford",
+      "model": "Explorer ST",
+      "year": 2021,
+      "color": "Magnetic Metallic",
+      "price": 56000
+    },
+    {
+      "id": 14,
+      "brand": "Porsche",
+      "model": "911 Carrera 4S",
+      "year": 2020,
+      "color": "Miami Blue",
+      "price": 115000
+    },
+    {
+      "id": 15,
+      "brand": "Porsche",
+      "model": "Panamera Turbo",
+      "year": 2021,
+      "color": "Chalk",
+      "price": 140000
+    },
+    {
+      "id": 16,
+      "brand": "Porsche",
+      "model": "Macan GTS",
+      "year": 2021,
+      "color": "Volcano Grey Metallic",
+      "price": 70000
+    },
+    {
+      "id": 17,
+      "brand": "Porsche",
+      "model": "Cayman GTS",
+      "year": 2021,
+      "color": "Gentian Blue Metallic",
+      "price": 85000
+    }
+  ]

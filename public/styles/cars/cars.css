@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div ul li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+strong {
+    color: #007BFF;
+}
+
+.car-info {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.actions a:hover {
+    color: #004d40; 
+}
